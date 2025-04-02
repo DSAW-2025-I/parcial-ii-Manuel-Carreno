@@ -39,7 +39,4 @@ app.post ('/products', (req,res) => {
     res.status(201).json(nuevoProducto);
 });
 
-app.listen (port, ()=> {
-    console.log('Corriendo el servidor en el puerto:', port);
-    
-})
+module.exports=app;
